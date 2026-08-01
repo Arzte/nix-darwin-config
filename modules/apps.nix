@@ -85,6 +85,9 @@
       "insomnia" # REST client
       "wireshark-app" # network analyzer
       "visual-studio-code" # Full fat IDE (trust)
+
+      # Crypto
+      "keybase"
     ];
   };
 }
