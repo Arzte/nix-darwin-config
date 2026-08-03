@@ -175,6 +175,8 @@
       # Sensible vim options
       enableSensible = true;
 
+      vimConfig = "set rnu\n";
+
       plugins = [
         {
           names = [

@@ -22,6 +22,7 @@
     git
     devenv
     fish
+    rsync
   ];
   environment.variables.EDITOR = lib.mkForce "nvim";
 
