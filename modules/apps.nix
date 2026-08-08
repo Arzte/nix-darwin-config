@@ -89,6 +89,9 @@
 
       # Crypto
       "keybase"
+
+      # tailscale the app because cmd line is for basic bitches
+      "tailscale-app"
     ];
   };
 }
