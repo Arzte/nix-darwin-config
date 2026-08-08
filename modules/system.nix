@@ -128,6 +128,12 @@
 
       # Path to which Screen capture's should be written to
       screencapture.location = "/Users/asteria/Screen Captures";
+
+      # Screensaver settings
+      screensaver = {
+	askForPassword = true;
+	askForPasswordDelay = 60; # Delay in seconds before asking for password
+      };
     };
 
     # Enable startup chime
@@ -137,6 +143,8 @@
 
 
   power = {
+    # Amount of idle time (in minutes) until displays sleep
+    sleep.display = 10;
     sleep.allowSleepByPowerButton = true;
   };
 
