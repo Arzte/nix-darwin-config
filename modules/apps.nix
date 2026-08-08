@@ -24,7 +24,7 @@
     fish
     rsync
   ];
-  environment.variables.EDITOR = lib.mkForce "nvim";
+  environment.variables.EDITOR = lib.mkForce "vim";
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   #
