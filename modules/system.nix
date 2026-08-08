@@ -175,7 +175,7 @@
       # Sensible vim options
       enableSensible = true;
 
-      vimConfig = "set rnu\n";
+      vimConfig = "set rnu\nset mouse=a";
 
       plugins = [
         {

@@ -78,7 +78,7 @@
 
       # Audio
       "spotify"
-      
+
       # Art
       "krita"
 
