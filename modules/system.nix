@@ -158,41 +158,4 @@
       services.sudo_local.reattach = true;
     };
   };
-
-
-  programs = {
-    # Create /etc/zshrc that loads the nix-darwin environment.
-    # this is required if you want to use darwin's default shell - zsh
-    zsh.enable = true;
-
-    # Configure fish as an interactive shell
-    fish.enable = true;
-
-    # Nix devenv
-    # devenv = {
-    #   enable = true;
-    #   enableFishIntergration = true;
-    # };
-
-    # nix-index and command-not-found helper
-    nix-index.enable = true;
-
-    vim = {
-      enable = true;
-
-      # Sensible vim options
-      enableSensible = true;
-
-      vimConfig = "set rnu\nset mouse=a";
-
-      plugins = [
-        {
-          names = [
-            "vim-surround"
-            "vim-nix"
-          ];
-        }
-      ];
-    };
-  };
 }

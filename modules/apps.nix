@@ -23,8 +23,62 @@
     devenv
     fish
     rsync
+    nix-index
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
+
+  programs = {
+    # Create /etc/zshrc that loads the nix-darwin environment.
+    # this is required if you want to use darwin's default shell - zsh
+    zsh.enable = true;
+
+    # Configure fish as an interactive shell
+    fish.enable = true;
+
+    # Nix devenv
+    # devenv = {
+    #   enable = true;
+    #   enableFishIntergration = true;
+    # };
+
+    # nix-index and command-not-found helper
+    nix-index.enable = true;
+
+    # Command-not-found helper for fish via. nix-index
+    # Shamelessly copied from the home-manager module, with modification
+    fish.interactiveShellInit =
+      let
+        wrapper = pkgs.writeScript "command-not-found" ''
+          #!${pkgs.bash}/bin/bash
+          source ${pkgs.nix-index}/etc/profile.d/command-not-found.sh
+          command_not_found_handle "$@"
+        '';
+      in
+	''
+        function __fish_command_not_found_handler --on-event fish_command_not_found
+            ${wrapper} $argv
+        end
+      '';
+
+    vim = {
+      enable = true;
+
+      # Sensible vim options
+      enableSensible = true;
+
+      vimConfig = "set rnu\nset mouse=a";
+
+      plugins = [
+        {
+          names = [
+            "vim-surround"
+            "vim-nix"
+          ];
+        }
+      ];
+    };
+  };
+
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   #
