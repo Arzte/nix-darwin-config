@@ -135,6 +135,7 @@
 
       # Art
       "krita"
+      "phoenix-slides"
 
       # Development
       "insomnia" # REST client
