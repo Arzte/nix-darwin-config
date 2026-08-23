@@ -18,7 +18,7 @@
     home = "/Users/${username}";
     description = fullName;
 
-    # Cannot be changed if user exists
+    # Cannot be changed once user exists
     shell = pkgs.${shell};
   };
   system.primaryUser = username;
