@@ -15,8 +15,8 @@
             # Substituters are considered before the official one (https://cache.nixos.org)
             # Mainly used for the Community binary cache.
             substituters = [
-                "https://cache.nixos.org/"
                 "https://nix-community.cachix.org"
+                "https://cache.nixos.org/"
             ];
             trusted-public-keys = [
                 "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
