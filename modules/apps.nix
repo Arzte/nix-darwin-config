@@ -24,6 +24,7 @@
     fish
     rsync
     nix-index
+    atuin
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
 
@@ -126,6 +127,7 @@
     casks = [
       "firefox"
       "google-chrome"
+      "tor-browser"
 
       # IM & audio & remote desktop & meeting
       # TODO "discord"
