@@ -106,7 +106,6 @@
     masApps = {
       # TODO Feel free to add your favorite apps here.
 
-      Xcode = 497799835;
       Bitwarden = 1352778147;
       # Wechat = 836500024;
       # QQ = 451108668;
