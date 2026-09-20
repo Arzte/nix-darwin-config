@@ -28,6 +28,7 @@
     fzf
     jujutsu
     jjui
+    tree-sitter
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
 
