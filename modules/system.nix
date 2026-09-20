@@ -37,6 +37,9 @@
         # Whether to show all file extensions in Finder.
         AppleShowAllExtensions = true;
 
+	# Whether to always show hidden files
+	AppleShowAllFiles = true;
+
         # When to show the scrollbars. Options are ‘WhenScrolling’, ‘Automatic’ and ‘Always’.
         AppleShowScrollBars = "Automatic";
 
