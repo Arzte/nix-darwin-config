@@ -25,6 +25,9 @@
     rsync
     nix-index
     atuin
+    fzf
+    jujutsu
+    jjui
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
 
