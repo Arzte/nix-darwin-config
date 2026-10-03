@@ -158,6 +158,9 @@
       "krita"
       "phoenix-slides"
 
+      # spellcheck
+      "harper-desktop"
+
       # Development
       "insomnia" # REST client
       "wireshark-app" # network analyzer
