@@ -36,6 +36,9 @@
     bottom
     python3Minimal
     nodejs
+    rustup
+    nil
+    alejandra
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
 
