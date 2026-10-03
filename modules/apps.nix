@@ -32,6 +32,12 @@
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
 
+  # Font(s)
+  fonts.packages = with pkgs; [
+    nerd-fonts.monaspace
+    nerd-fonts.open-dyslexic
+    nerd-fonts.hack
+  ];
   programs = {
     # Create /etc/zshrc that loads the nix-darwin environment.
     # this is required if you want to use darwin's default shell - zsh
