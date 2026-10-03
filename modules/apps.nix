@@ -29,6 +29,13 @@
     jujutsu
     jjui
     tree-sitter
+    clang
+    ripgrep-all
+    lazygit
+    gdu
+    bottom
+    python3Minimal
+    nodejs
   ];
   environment.variables.EDITOR = lib.mkForce "vim";
 
