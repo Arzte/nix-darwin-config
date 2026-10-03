@@ -1,4 +1,4 @@
-{ pkgs, lib,  ... }:
+{ pkgs, lib, ... }:
 {
   ##########################################################################
   #
@@ -75,7 +75,7 @@
           command_not_found_handle "$@"
         '';
       in
-	''
+      ''
         function __fish_command_not_found_handler --on-event fish_command_not_found
             ${wrapper} $argv
         end
@@ -99,7 +99,6 @@
       ];
     };
   };
-
 
   # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
   #

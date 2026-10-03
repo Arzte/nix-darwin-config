@@ -1,5 +1,11 @@
-
-{ hostname, username, shell, fullName, pkgs, ... }:
+{
+  hostname,
+  username,
+  shell,
+  fullName,
+  pkgs,
+  ...
+}:
 
 #############################################################
 #
@@ -12,7 +18,7 @@
   networking.computerName = hostname;
   system.defaults.smb.NetBIOSName = hostname;
 
-  users.users."${username}"= {
+  users.users."${username}" = {
     # Create the home directory when creating the user
     createHome = true;
     home = "/Users/${username}";

@@ -1,13 +1,13 @@
 { pkgs, ... }:
 
-  ###################################################################################
-  #
-  #  macOS's System configuration
-  #
-  #  All the configuration options are documented here:
-  #    https://nix-darwin.github.io/nix-darwin/manual/index.html#sec-options
-  #
-  ###################################################################################
+###################################################################################
+#
+#  macOS's System configuration
+#
+#  All the configuration options are documented here:
+#    https://nix-darwin.github.io/nix-darwin/manual/index.html#sec-options
+#
+###################################################################################
 {
   system = {
     stateVersion = 6;
@@ -37,8 +37,8 @@
         # Whether to show all file extensions in Finder.
         AppleShowAllExtensions = true;
 
-	# Whether to always show hidden files
-	AppleShowAllFiles = true;
+        # Whether to always show hidden files
+        AppleShowAllFiles = true;
 
         # When to show the scrollbars. Options are ‘WhenScrolling’, ‘Automatic’ and ‘Always’.
         AppleShowScrollBars = "Automatic";
@@ -134,8 +134,8 @@
 
       # Screensaver settings
       screensaver = {
-	askForPassword = true;
-	askForPasswordDelay = 60; # Delay in seconds before asking for password
+        askForPassword = true;
+        askForPasswordDelay = 60; # Delay in seconds before asking for password
       };
     };
 
@@ -144,14 +144,12 @@
     startup.chime = true;
   };
 
-
   power = {
     # Amount of idle time (in minutes) until displays sleep
     sleep.display = 10;
     sleep.allowSleepByPowerButton = true;
   };
 
-  
   security = {
     pam = {
       # Add ability to used TouchID for sudo authentication
