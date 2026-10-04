@@ -13,7 +13,7 @@
     stateVersion = 6;
 
     defaults = {
-      # System-wide alert sound. Found under "Sound Effects" in the "Sound" section of "System Prefereneces"
+      # System-wide alert sound. Found under "Sound Effects" in the "Sound" section of "System Settings"
       # Set to Submerge
       ".GlobalPreferences"."com.apple.sound.beep.sound" = "/System/Library/Sounds/Submarine.aiff";
 
@@ -31,7 +31,7 @@
         # Press and Hold for Accents
         ApplePressAndHoldEnabled = true;
 
-        # Jumpt to the spot that's click on the scroll bar
+        # Jump to the spot that's click on the scrollbar
         AppleScrollerPagingBehavior = true;
 
         # Whether to show all file extensions in Finder.
@@ -46,7 +46,7 @@
         # Enable automatic capitalization
         NSAutomaticCapitalizationEnabled = true;
 
-        # Disable period substitution, 'cause i hate it.
+        # Disable period substitution, 'cause I hate it.
         NSAutomaticPeriodSubstitutionEnabled = false;
 
         # Enable expanded save panel by default
@@ -54,7 +54,7 @@
         NSNavPanelExpandedStateForSaveMode2 = true;
       };
 
-      # Automatically install MacOS software updates
+      # Automatically install macOS software updates
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
 
       # Click wallpaper to reveal desktop
@@ -120,7 +120,7 @@
       # Enable two-finger pinch gesture for zooming in and out
       trackpad.TrackpadPinch = true;
 
-      # Enable trackpad right click
+      # Enable trackpad right-click
       trackpad.TrackpadRightClick = true;
 
       # show 24 hour clock
@@ -139,7 +139,7 @@
       };
     };
 
-    # Enable startup chime
+    # Enable start up chime
     # CAUTION: Can not be unset once set. It *will* allow the setting to be controlled in system settings
     startup.chime = true;
   };
@@ -154,7 +154,7 @@
     pam = {
       # Add ability to used TouchID for sudo authentication
       services.sudo_local.touchIdAuth = true;
-      # enable reattaching a program to a user's bootstrap session
+      # Enable reattaching a program to a user's bootstrap session
       # fixes Touch ID for sudo not working inside tmux/screen across user sessions
       services.sudo_local.reattach = true;
     };

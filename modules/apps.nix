@@ -4,7 +4,7 @@
   #
   #  Install all apps and packages here.
   #
-  # TODO Fell free to modify this file to fit your needs.
+  # TO-DO Feel free to modify this file to fit your needs.
   #
   ##########################################################################
 
@@ -50,7 +50,7 @@
   ];
   programs = {
     # Create /etc/zshrc that loads the nix-darwin environment.
-    # this is required if you want to use darwin's default shell - zsh
+    # This is required if you want to use Darwin's default shell - zsh
     zsh.enable = true;
 
     # Configure fish as an interactive shell
@@ -100,7 +100,7 @@
     };
   };
 
-  # TODO To make this work, homebrew need to be installed manually, see https://brew.sh
+  # TO-DO To make this work, homebrew need to be installed manually, see https://brew.sh
   #
   # The apps installed by homebrew are not managed by nix, and not reproducible!
   # But on macOS, homebrew has a much larger selection of apps than nixpkgs, especially for GUI apps!
@@ -120,35 +120,35 @@
 
     # Applications to install from Mac App Store using mas.
     # You need to install all these Apps manually first so that your apple account have records for them.
-    # otherwise Apple Store will refuse to install them.
+    # Otherwise, Apple Store will refuse to install them.
     # For details, see https://github.com/mas-cli/mas
     masApps = {
-      # TODO Feel free to add your favorite apps here.
+      # TO-DO Feel free to add your favorite apps here.
 
       Bitwarden = 1352778147;
-      # Wechat = 836500024;
+      # WeChat = 836500024;
       # QQ = 451108668;
     };
 
     # taps = [];
 
     # `brew install`
-    # TODO Feel free to add your favorite apps here.
+    # TO-DO Feel free to add your favorite apps here.
     brews = [
       "wget" # download tool
-      "curl" # installing curl via nixpkg is apparently not working well on macOSx!
+      "curl" # Installing curl via nixpkg is apparently not working well on macOS!
       "aria2" # download tool
     ];
 
     # `brew install --cask`
-    # TODO Feel free to add your favorite apps here.
+    # TO-DO Feel free to add your favorite apps here.
     casks = [
       "firefox"
       "google-chrome"
       "tor-browser"
 
       # IM & audio & remote desktop & meeting
-      # TODO "discord"
+      # TO-DO "discord"
 
       # Audio
       "spotify"
@@ -168,7 +168,7 @@
       # Crypto
       "keybase"
 
-      # tailscale the app because cmd line is for basic bitches
+      # Tailscale the app because cmd line is for basic bitches
       "tailscale-app"
     ];
   };

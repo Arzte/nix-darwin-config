@@ -33,7 +33,7 @@
       fullName = "Asteria Christine Hoffmeyer";
       system = "aarch64-darwin"; # aarch64-darwin or x86_64-darwin
       hostname = "Asterias-MacBook-Pro";
-      shell = "fish"; # nix pkgs name of desired shell
+      shell = "fish"; # Nix pkgs name of desired shell
 
       specialArgs = inputs // {
         inherit

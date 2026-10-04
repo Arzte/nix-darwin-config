@@ -8,7 +8,7 @@
         "flakes"
       ];
 
-      # Substituters are considered before the official one (https://cache.nixos.org)
+      # Substitutes are considered before the official one (https://cache.nixos.org)
       # Mainly used for the Community binary cache.
       substituters = [
         "https://nix-community.cachix.org"
@@ -18,7 +18,7 @@
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       ];
 
-      # When set to true, Nix instructs remote build machines to use their own substituters if available.
+      # When set to true, Nix instructs remote build machines to use their own substitutes if available.
       # Helps reduce build times if local machine to remote's connection is slow
       builders-use-substitutes = true;
 
@@ -38,7 +38,7 @@
       options = "--delete-older-than 7d";
     };
 
-    # Automatically run nix store optimiser
+    # Automatically run nix store optimizer
     optimise.automatic = true;
   };
 }
