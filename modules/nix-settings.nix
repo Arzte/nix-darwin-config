@@ -1,8 +1,4 @@
-{
-  pkgs,
-  libs,
-  ...
-}:
+{ ... }:
 {
   nix = {
     settings = {
